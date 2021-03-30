@@ -1,24 +1,15 @@
-/* Font imports */
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
 
-/* Variables */
 :root {
-  /* Primary Colors */
   --clr-cyan: hsl(179, 62%, 43%);
   --clr-bright-yellow: hsl(71, 73%, 54%);
   --clr-white: hsl(0, 0%, 100%);
-
-  /* Neutral Colors */
   --clr-light-gray: hsl(204, 43%, 93%);
   --clr-grayish-blue: hsl(218, 22%, 67%);
-
-  /*  Typography -  (weight ?) */
-  --chivo: "Karla", sans-serif;
+  --font: "Karla", sans-serif;
   --fw-reg: 400;
   --fw-bold: 700;
 }
-
-/*  Small CSS Reset */
 
 *,
 *::before,
@@ -30,13 +21,13 @@
 }
 
 body {
-  font-family: var(--chivo);
-  font-size: 16px;
+  font-family: var(--font);
+  font-size: 1rem;
   background: var(--clr-light-gray);
 }
 
 .container {
-  max-width: 375px;
+  max-width: 23.4375em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,19 +38,19 @@ body {
 
 .grid-main {
   display: grid;
-  grid-template-columns: 345px;
+  grid-template-columns: 21.5625em;
   justify-content: center;
   align-items: center;
   margin: 2em 0.625em;
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
+  box-shadow: 0.625em 0.625em 31.875em rgba(0, 0, 0, 0.2);
+  border-radius: 10.625em;
 }
 
 .top-div {
   padding: 0.625em;
   background-color: var(--clr-white);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 0.625em;
+  border-top-right-radius: 0.625em;
 }
 
 .top-div h1 {
@@ -138,8 +129,8 @@ button{
   padding: 0.5em 0.625em 1.7em 0.625em;
   background-color: var(--clr-cyan);
   opacity: 70%;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 0.625em;
+  border-bottom-right-radius: 0.625em;
 }
 
 .bottum-div h1 {
@@ -159,14 +150,14 @@ button{
 @media(min-width:40em){
 
   .container {
-    max-width: 1440px;
+    max-width: 90em;
     }
 
     button{
       padding: 1em 6.5em;
    }
   .grid-main { 
-    grid-template-columns: repeat(2,300px);
+    grid-template-columns: repeat(2,18.75em);
     grid-template-rows: repeat(2,auto);    
   }
   .top-div {
@@ -176,13 +167,13 @@ button{
   .middle-div {
     grid-column: 1/2;
     grid-row: 2/3;
-    border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 0.625em;
     border-bottom-right-radius: 0px;
   }
   .bottum-div {
     grid-column: 2/3;
     grid-row: 2/3;
     border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 0.625em;
   }
 }
